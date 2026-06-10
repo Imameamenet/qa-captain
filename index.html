@@ -24,6 +24,15 @@
             align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,.25); }
   .bubble svg { width:30px; height:30px; fill:#fff; }
   .arrow { font-size:24px; }
+  /* Make the Chatwoot desktop widget responsive to window height (Chatwoot uses a fixed min-height:780px otherwise) */
+  @media (min-width:668px){
+    .woot-widget-holder.woot-elements--right,
+    .woot-widget-holder.woot-elements--left{
+      top:auto !important; bottom:88px !important;
+      height:calc(100vh - 104px) !important; max-height:calc(100vh - 104px) !important;
+    }
+    .woot-widget-holder iframe{ min-height:0 !important; height:100% !important; }
+  }
 </style>
 </head>
 <body>
