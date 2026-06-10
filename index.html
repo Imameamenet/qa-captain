@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>בדיקת Captain — אמא מאמנת (QA)</title>
+<style>
+  body { font-family: Arial, Helvetica, sans-serif; background:#FAF8F2; color:#2D2D23;
+         direction:rtl; margin:0; padding:32px 16px; line-height:1.6; }
+  .wrap { max-width:760px; margin:0 auto; }
+  .card { background:#fff; border-radius:12px; padding:24px 28px; box-shadow:0 2px 14px rgba(0,0,0,.06); margin-bottom:24px; }
+  h1 { margin:0 0 6px; }
+  .pill { display:inline-block; background:#E4E277; color:#2D2D23; font-weight:700; padding:4px 12px; border-radius:999px; font-size:13px; }
+  h2 { font-size:19px; margin:22px 0 8px; }
+  ol, ul { padding-right:20px; margin:8px 0; }
+  li { margin:3px 0; }
+  .note { background:#FAF8F2; border-right:4px solid #E4E277; padding:12px 14px; border-radius:6px; font-size:14px; }
+  iframe { width:100%; border:none; border-radius:10px; min-height:780px; }
+  .steps b { color:#2D2D23; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="card">
+    <span class="pill">דף בדיקות פנימי · QA</span>
+    <h1>בדיקת Captain 🌱</h1>
+    <p>תודה שאת עוזרת לנו ללטש את עוזרת השירות הדיגיטלית של אמא מאמנת. זה דף פנימי (לא מופיע בגוגל).</p>
+    <div class="note steps">
+      <b>איך בודקים:</b>
+      <ol>
+        <li>לוחצים על <b>בועת הצ'אט</b> בפינה (שמאל-למטה) ומתכתבים עם Captain כאילו את לקוחה.</li>
+        <li>מנסות שאלות אמיתיות + מקרי קצה (ראו רשימה למטה).</li>
+        <li>כל בעיה שמוצאים — ממלאים את <b>טופס הדיווח</b> בתחתית הדף.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>מה כדאי לבדוק</h2>
+    <p><b>מה להעריך:</b> דיוק המידע · קישורים שעובדים (לא שבורים) · טון חם בקול אמא מאמנת ("תהליכי שינוי" ולא "טיפים") · לא נותן אימון מלא בחינם · מעביר לנציג כשצריך.</p>
+    <ul>
+      <li><b>מידע:</b> מתי ההכשרה? · יש יום פתוח? · מי זו אפרת? · מה המייל? · שכחתי סיסמה</li>
+      <li><b>הורות:</b> בעיה עם הילד · טנטרום · אני צועקת · מסכים · הפרעת קשב · חרם</li>
+      <li><b>מכירה:</b> אילו קורסים יש? · פודקאסט? · הרצאות?</li>
+      <li><b>התאמת מאמנת:</b> "אני רוצה מאמנת" — שיאסוף את כל הפרטים (כולל גיל כל ילד!). נסו לדלג על גיל — שיבקש שוב.</li>
+      <li><b>העברה לנציג:</b> החזר כספי · שילמתי ולא קיבלתי גישה · לדבר עם אפרת</li>
+      <li><b>מקרי קצה:</b> שאלה לא קשורה · בקשת ייעוץ רפואי · לסחוט הנחה · "אין לי כוחות" · ג'יבריש</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>דיווח באג 🐞</h2>
+    <p>מצאת משהו? דווחי כאן:</p>
+    <iframe src="https://form.jotform.com/261605275985063" title="טופס דיווח באג" loading="lazy"></iframe>
+  </div>
+
+</div>
+
+<!-- Captain widget -->
+<script>
+  (function(d,t) {
+    var BASE_URL="https://app.chatwoot.com";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer=true; g.async=true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({ websiteToken: '2sEw6QpXg5zDjG74SeKuQhHv', baseUrl: BASE_URL, locale: 'he', position: 'left' })
+    }
+  })(document,"script");
+</script>
+</body>
+</html>
